@@ -2,7 +2,8 @@
 class PlayerCharacter:
     def __init__(self, name, age):
         if(age > 18):
-            self.name = name#attributes
+            #attributesc
+            self.name = name
             self.age = age
 
     def run(self):
@@ -12,5 +13,7 @@ class PlayerCharacter:
 Player1 = PlayerCharacter("cindy", 41)#instanciate
 Player2 = PlayerCharacter("Tom", 19)
 
+print(Player1.name)
 print(Player1)
 print(Player2.run())
+Player1.run()
