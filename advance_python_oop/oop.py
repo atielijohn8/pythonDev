@@ -14,7 +14,7 @@ class course:
         self.name = name
         self.max_students = max_students
         self.students = []#allows us to enter student into the course
-
+    
     def add_students(self, student):
         if len(self.students) < self.max_students:
             self.students.append(student)
@@ -33,8 +33,8 @@ s2 = student('bill', 19, 75)
 s3 = student('jill', 19, 65)
 
 #adding students to the course
-course = course('physics', 2)
+course = course('physics', 3)
 course.add_students(s1)
 course.add_students(s2)
-print(course.students[0].name)
+course.add_students(s3)
 print(course.get_average_grade())
